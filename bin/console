@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require 'irb'
+require 'html_scss_class_checker'  # Require your gem
+
+# Start an IRB session with your gem loaded
+IRB.start

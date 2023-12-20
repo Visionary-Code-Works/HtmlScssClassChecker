@@ -1,0 +1,22 @@
+#!/usr/bin/env ruby
+
+require 'fileutils'
+require 'json'
+
+# Example setup tasks
+puts "Setting up the HtmlScssClassChecker gem..."
+
+# Create a default configuration file if it doesn't exist
+config_path = File.join(Dir.pwd, 'config.json')
+unless File.exist?(config_path)
+  default_config = {
+    'known_classes' => [],
+    'html_directories' => ['_includes', '_layouts'],
+    'scss_directories' => ['_sass']
+  }
+
+  File.write(config_path, JSON.pretty_generate(default_config))
+  puts "Created default config.json file."
+end
+
+puts "Setup complete."
