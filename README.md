@@ -70,4 +70,3 @@ Distributed under the MIT License. See [LICENSE](/LICENSE) for more information.
 - [Testing Guide](/docs/testing.md): Information on how to run and write tests for the gem.
 - [Usage Documentation](`/docs/usage.md`): Provide detailed instructions on how to use the gem, including various configurations and options.
 - [Contributing Guidelines](`/CONTRIBUTING.md`):** Outline how others can contribute to your project. Include information on coding standards, pull request processes, and issue reporting guidelines.
-# HtmlScssClassChecker
