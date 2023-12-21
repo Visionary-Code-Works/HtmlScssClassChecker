@@ -1,0 +1,62 @@
+name: Update Changelog
+
+on:
+  push:
+    branches:
+      - main  # Set this to the branch you want to trigger on
+  release:
+    types: [created]
+
+jobs:
+  update-changelog:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '3.2.2'  # Specify your Ruby version
+
+    - name: Install github_changelog_generator
+      run: gem install github_changelog_generator
+
+    - name: Generate Changelog
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        github_changelog_generator \
+          --user visionary-code-works \
+          --project HtmlScssClassChecker \
+          --token ${{ secrets.GITHUB_TOKEN }} \
+          --date-format "%Y-%m-%d" \
+          --output "CHANGELOG.md" \
+          --base "HISTORY.md" \
+          --exclude-labels "duplicate,question,invalid,wontfix,Duplicate,Question,Invalid,Wontfix,Meta: Exclude From Changelog" \
+          --summary-labels "Release summary,release-summary,Summary,summary" \
+          --breaking-labels "backwards-incompatible,Backwards incompatible,breaking" \
+          --enhancement-labels "enhancement,Enhancement,Type: Enhancement" \
+          --bug-labels "bug,Bug,Type: Bug" \
+          --deprecated-labels "deprecated,Deprecated,Type: Deprecated" \
+          --removed-labels "removed,Removed,Type: Removed" \
+          --security-labels "security,Security,Type: Security" \
+          --header "# Changelog" \
+          --merge-prefix "**Merged pull requests:**" \
+          --issue-prefix "**Closed issues:**" \
+          --breaking-prefix "**Breaking changes:**" \
+          --enhancement-prefix "**Implemented enhancements:**" \
+          --bug-prefix "**Fixed bugs:**" \
+          --deprecated-prefix "**Deprecated:**" \
+          --removed-prefix "**Removed:**" \
+          --security-prefix "**Security fixes:**" \
+          --simple-list \
+          --verbose
+
+    - name: Commit and Push Changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add CHANGELOG.md
+        git commit -m "Update CHANGELOG.md"
+        git push
