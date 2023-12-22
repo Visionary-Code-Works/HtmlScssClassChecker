@@ -70,5 +70,5 @@ Distributed under the MIT License. See [LICENSE](/LICENSE) for more information.
 - [Code of Conduct](/CODE_OF_CONDUCT.md): Guidelines for participation in the community.
 - [Development Guide](/docs/development.md): Instructions for setting up a development environment and working on the gem.
 - [Testing Guide](/docs/testing.md): Information on how to run and write tests for the gem.
-- [Usage Documentation](`/docs/usage.md`): Provide detailed instructions on how to use the gem, including various configurations and options.
-- [Contributing Guidelines](`/CONTRIBUTING.md`):** Outline how others can contribute to your project. Include information on coding standards, pull request processes, and issue reporting guidelines.
+- [Usage Documentation](/docs/usage.md): Provide detailed instructions on how to use the gem, including various configurations and options.
+- [Contributing Guidelines](/CONTRIBUTING.md): Outline how others can contribute to your project. Include information on coding standards, pull request processes, and issue reporting guidelines.
