@@ -1,4 +1,6 @@
-# HtmlScssClassChecker
+# Html Scss Class Checker
+
+[![Gem Version](https://badge.fury.io/rb/html_scss_class_checker.svg)](https://badge.fury.io/rb/html_scss_class_checker)
 
 HtmlScssClassChecker is a Ruby gem for extracting and comparing class names from HTML and SCSS files. It helps in identifying unmatched or unused classes, enhancing the maintainability of front-end codebases.
 
