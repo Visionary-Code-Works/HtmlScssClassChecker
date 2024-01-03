@@ -1,8 +1,8 @@
 Gem::Specification.new do |spec|
   spec.name          = "html_scss_class_checker"
-  spec.version       = "0.1.0"
+  spec.version       = "0.2.0"
   spec.authors       = ["Thaddeus Thomas"]
-  spec.email         = ["support@vcwtech.com"]
+  spec.email         = ["thaddeus@vcwtech.com"]
 
   spec.summary       = %q{A Ruby gem for identifying unused or unmatched HTML and SCSS classes.}
   spec.description   = %q{HtmlScssClassChecker is designed to streamline the process of frontend development by scanning HTML and SCSS files and identifying classes that are either undefined or unused. This gem aims to facilitate cleaner, more maintainable, and efficient codebases by providing developers with the tools to easily audit and synchronize their HTML and SCSS class definitions. Its an essential tool for web developers looking to optimize their front-end code and ensure consistency across their stylesheets and markup.}
