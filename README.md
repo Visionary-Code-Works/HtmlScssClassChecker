@@ -64,6 +64,8 @@ Distributed under the MIT License. See [LICENSE](/LICENSE) for more information.
 
 ## Additional Resources
 
+[![Update Changelog](https://github.com/Visionary-Code-Works/HtmlScssClassChecker/actions/workflows/changelog-update.yml/badge.svg)](https://github.com/Visionary-Code-Works/HtmlScssClassChecker/actions/workflows/changelog-update.yml)
+
 - [Changelog](/CHANGELOG.md): Detailed list of changes in each version.
 - [Code of Conduct](/CODE_OF_CONDUCT.md): Guidelines for participation in the community.
 - [Development Guide](/docs/development.md): Instructions for setting up a development environment and working on the gem.

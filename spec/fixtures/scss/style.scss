@@ -1,0 +1,44 @@
+// Main style file
+
+$header-color: #333;
+$nav-color: #555;
+$text-color: #666;
+$footer-color: #777;
+
+.header {
+    background-color: $header-color;
+
+    .title {
+        color: white;
+    }
+}
+
+.navigation {
+    background-color: $nav-color;
+
+    .nav-list {
+        list-style: none;
+
+        .nav-item {
+            color: $text-color;
+            &:hover {
+                color: darken($text-color, 10%);
+            }
+        }
+    }
+}
+
+.content {
+    .intro {
+        .text {
+            color: $text-color;
+        }
+    }
+}
+
+.footer {
+    background-color: $footer-color;
+    .footer-text {
+        color: white;
+    }
+}
