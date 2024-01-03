@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = "html_scss_class_checker"
-  spec.version       = "0.2.0"
+  spec.version       = "0.2.1"
   spec.authors       = ["Thaddeus Thomas"]
   spec.email         = ["thaddeus@vcwtech.com"]
 
